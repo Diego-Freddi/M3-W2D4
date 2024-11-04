@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary bg-opacity-25 sticky-top border-bottom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <img src="assets/Logo2.png" alt="logo" width="70" height="70">
+            </button>
+            <h2 class="text-body-secondary nameFont"> Agenzia di Viaggio "Oltre Confine"
+            </h2>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#weekOffer">Week's Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcomeSummer">Welcome Summer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dailyOffer">Daily Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lastMinute">Last Minute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <button id="chiudiCard" class="nav-link m-0" data-bs-toggle="collapse" data-bs-target="#collapseWeek, #collapseWelcome, #collapseLast">Chiudi/Apri tutte le card</button>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="jumbotron">
+        <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                </a>
+                <span class="fs-4 text-muted">Il mondo ti aspetta, inizia da qui!</span>
+
+            </header>
+
+            <div class="p-5 mb-4 background-image rounded-3" style="min-height: 400px;">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Oltre i confini, dentro l'esperienza</h1>
+                    <p class="col-md-8 fs-4">Ogni viaggio è un'opportunità per vedere il mondo con occhi nuovi. Partiamo
+                        insieme, verso avventure che vanno oltre i confini.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="weekOffer" class="bg-light bg-opacity-75 py-4">
+        <header class=" container pt-5 mt-5 pb-3 mb-4 border-bottom text-end">
+            <button class="btn border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek"
+                aria-expanded="true" aria-controls="collapseWeek">
+                <span class="fs-4 text-muted">Offer of the Week</span>
+            </button>
+
+        </header>
+
+        <div id="collapseWeek" class="container py-4 collapse show">
+            <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+                <div class="trip contatore col-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <h4 class="card-title fw-normal">Istanbul</h4>
+                        <div class="px-3 contenitoreWeek">
+                            <img src="assets/Istanbul.jpg" class="card-img-top rounded-3" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h3
+                                class="card-title pricing-card-title text-body-secondary text-decoration-line-through fs-6 fst-italic">
+                                € 850,00</h3>
+                            <h3 class="card-title pricing-card-title">€ 680,00</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip contatore col-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <h4 class="card-title fw-normal">Maldive</h4>
+                        <div class="px-3 contenitoreWeek">
+                            <img src="assets/Maldive.jpg" class="card-img-top rounded-3" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h3
+                                class="card-title pricing-card-title text-body-secondary text-decoration-line-through fs-6 fst-italic">
+                                € 3.200,00</h3>
+                            <h3 class="card-title pricing-card-title">€ 2.560,00</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip contatore col-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <h4 class="card-title fw-normal">Amsterdam</h4>
+                        <div class="px-3 contenitoreWeek">
+                            <img src="assets/jordaan-amsterdam.jpg" class="card-img-top rounded-3" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h3
+                                class="card-title pricing-card-title text-body-secondary text-decoration-line-through fs-6 fst-italic">
+                                € 1.100,00</h3>
+                            <h3 class="card-title pricing-card-title">€ 880,00</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip contatore col-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <h4 class="card-title fw-normal">Roma</h4>
+                        <div class="px-3 contenitoreWeek">
+                            <img src="assets/Roma.jpg" class="card-img-top rounded-3" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h3
+                                class="card-title pricing-card-title text-body-secondary text-decoration-line-through fs-6 fst-italic">
+                                € 1.400,00</h3>
+                            <h3 class="card-title pricing-card-title">€ 1.120,00</h3>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="welcomeSummer" class="container py-4">
+        <header class=" container px-0 pb-3 pt-5 mt-5 mb-4 border-bottom text-start">
+            <button class="btn border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWelcome"
+                aria-expanded="true" aria-controls="collapseWelcome">
+                <span class="fs-4 text-muted">Welcome Summer</span>
+            </button>
+        </header>
+        <div id="collapseWelcome" class="album pb-5 collapse show">
+            <div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3">
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/Cape Town South Africa.jpg" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">Cape Town</p>
+                                <p class="card-text mb-0 pReduce">“Avventura e mare ai confini del mondo!”
+                                    Esplora la maestosa Table Mountain, fai surf a Camps Bay e avventurati tra le
+                                    vigne
+                                    dei celebri vini sudafricani. Immergiti in una città dove natura selvaggia e
+                                    cultura
+                                    vibrante si incontrano.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/kyoto.jpg" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">Kyoto</p>
+                                <p class="card-text mb-0 pReduce">“La magia dell’antico Giappone ti aspetta!”
+                                    Passeggia tra i ciliegi in fiore, scopri i templi e i giardini zen, e immergiti
+                                    nelle tradizioni di una città che sa incantare. Kyoto è il rifugio ideale per
+                                    chi
+                                    cerca bellezza, storia e tranquillità.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/Medina.avif" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">Medina</p>
+                                <p class="card-text mb-0 pReduce">“Un viaggio nel cuore spirituale dell’Arabia”
+                                    Vivi la cultura araba a Medina, una delle città più sacre e affascinanti del
+                                    mondo
+                                    islamico. Dai mercati tradizionali agli imponenti edifici storici, scopri
+                                    un’ospitalità senza eguali e una spiritualità autentica.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/NewYork.jpg" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">New york</p>
+                                <p class="card-text mb-0 pReduce">“La città che non dorme mai!”
+                                    Grattacieli, teatri di Broadway, Central Park e l’incredibile skyline: New York
+                                    è
+                                    una continua scoperta! Immergiti nell’energia ineguagliabile della Grande Mela
+                                    per
+                                    una vacanza cosmopolita che non dimenticherai.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/dubai-tower-arab-khalifa-162031.jpeg" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">Dubai</p>
+                                <p class="card-text mb-0 pReduce">“Lusso e avventura nel deserto”
+                                    Sali in cima al Burj Khalifa, scopri le dune del deserto e rilassati nelle
+                                    spiagge
+                                    dorate. Dubai è la destinazione perfetta per chi cerca lusso, shopping e
+                                    esperienze
+                                    uniche tra modernità e tradizione.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip contatore col-6 col-md-4 col-lg-2">
+                        <div class="card shadow overflow">
+                            <div class="contenitoreSummer">
+                                <img src="assets/Preikestolen_norvegia_fiordi_norvegesi_piu_belli.webp" alt="">
+                            </div>
+                            <div class="card-body row" style="height: 240px;">
+                                <p class="m-0">Fiordi</p>
+                                <p class="card-text mb-0 pReduce">“Benvenuti nella terra dei fiordi!”
+                                    Naviga tra le acque cristalline dei fiordi, ammira le cascate che scendono a
+                                    picco
+                                    dalle montagne e vivi il silenzio unico della natura norvegese. Perfetto per gli
+                                    amanti dell’avventura e della tranquillità nordica.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Vedi le
+                                            nostre
+                                            proposte</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="dailyOffer" class="bg-light bg-opacity-75 py-4">
+        <header class="container pt-5 mt-5 pb-3 mb-4 border-bottom text-end">
+            <button class="btn border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDaily"
+                aria-expanded="true" aria-controls="collapseDaily">
+                <span class="fs-4 text-muted">Daily Offer: MADRID</span>
+            </button>
+        </header>
+
+
+        <div id="collapseDaily" class="container pb-5 collapse show">
+            <div class="contatore row align-items-md-stretch">
+                <div class="col-md-8">
+                    <img class="rounded-3" src="assets/Madrid.jpg" alt="" width="97%">
+                </div>
+                <div class="col-md-4">
+                    <div class=" p-4 bg-body-tertiary border rounded-3">
+                        <h6>Weekend a Madrid</h6>
+                        <ul>
+                            <li>Data: 10-12 marzo 2024</li>
+                            <li>Prezzo: 250€ a persona</li>
+                        </ul>
+                        <h6>Ponte di Primavera</h6>
+                        <ul>
+                            <li>Data: 10-12 marzo 2024</li>
+                            <li>Prezzo: 250€ a persona</li>
+                        </ul>
+                        <h6>Estate a Madrid</h6>
+                        <ul>
+                            <li>Data: 10-12 marzo 2024</li>
+                            <li>Prezzo: 250€ a persona</li>
+                        </ul>
+                        <p>Madrid, capitale della Spagna, è una città vibrante e cosmopolita. Situata nel cuore della
+                            penisola iberica, Madrid offre un mix affascinante di tradizione e modernità.
+                            Il centro città è dominato dalla grandiosa Plaza Mayor, una delle piazze più famose
+                            d'Europa, e dal Palazzo Reale, un'imponente residenza storica. Madrid è anche un paradiso
+                            per gli amanti dell'arte, con musei di fama mondiale.</p>
+
+                        <button class="btn btn-outline-secondary" type="button">Prenota</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lastMinute" class="py-4">
+        <header class="container pt-5 mt-5 pb-3 mb-4 border-bottom text-start">
+            <button class="btn border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                aria-expanded="true" aria-controls="collapseLast">
+                <span class="fs-4 text-muted">Last Minute Offer</span>
+            </button>
+        </header>
+
+        <div id="collapseLast" class="container collapse show pb-5">
+
+            <div class="row row-cols-md-4">
+
+                <div class="trip contatore col col-md-4">
+                    <div class="card text-white h-100">
+                        <img src="assets/Tokyo.avif" class="card-img h-100" alt="...">
+                        <div class="card-img-overlay row">
+                            <h5 class="card-title text-bordered">Tokyo</h5>
+                            <p class="card-text text-bordered">“Vivi l’eleganza e l’energia della metropoli giapponese!”
+                                Immergiti nella cultura unica di Tokyo, con i suoi templi affascinanti e i quartieri
+                                futuristici. Questo pacchetto è pensato per chi vuole scoprire il Giappone in modo
+                                autentico, approfittando di uno sconto imperdibile.
+                            </p>
+                            <p class="card-text mb-0"><small>Last updated 3 mins ago</small></p>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div class="btn-group">
+                                    <button type="button"
+                                        class="btn btn-sm text-white btn-outline-secondary">Scegli</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="trip contatore col col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <img src="assets/sidney.jpg" class="card-img h-100 opacity-75" alt="...">
+                        <div class="card-img-overlay row">
+                            <h5 class="card-title text-bordered">Sydeny</h5>
+                            <p class="card-text text-bordered">“Tra spiagge dorate e icone mondiali, vivi
+                                un’avventura
+                                unica a Sydney!”
+                                Visita l’iconica Opera House, rilassati sulle spiagge più belle e scopri la vibrante
+                                scena culturale australiana. Questo pacchetto Last Minute ti consente di vivere
+                                un’esperienza indimenticabile a metà prezzo.
+                            </p>
+                            <p class="card-text mb-0"><small>Last updated 3 mins ago</small></p>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div class="btn-group">
+                                    <button type="button"
+                                        class="btn btn-sm text-white btn-outline-secondary">Scegli</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="trip contatore col col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <img src="assets/seychelles-10-migliori-resort.jpg" class="card-img h-100 opacity-75" alt="...">
+                        <div class="card-img-overlay row">
+                            <h5 class="card-title text-bordered">Seychelles</h5>
+                            <p class="card-text text-bordered">“Paradiso tropicale a portata di mano: vivi le Seychelles
+                                ora!”
+                                Approfitta di questa offerta per rilassarti su spiagge paradisiache, esplorare la natura
+                                incontaminata e goderti la serenità di un angolo di paradiso a metà prezzo.
+                            </p>
+                            <p class="card-text mb-0"><small>Last updated 3 mins ago</small></p>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div class="btn-group">
+                                    <button type="button"
+                                        class="btn btn-sm text-white btn-outline-secondary">Scegli</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-4 bg-light bg-opacity-75">
+        <header class="container pt-5 mt-5 pb-3 mb-4 border-bottom text-end">
+            <button class="btn border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTestimon"
+                aria-expanded="true" aria-controls="collapseTesimon">
+                <span class="fs-4 text-muted">Dicono di noi...</span>
+            </button>
+        </header>
+
+        <div id="collapseTestimon" class="container collapse show">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces"
+                                    class="rounded-circle me-3" alt="Sarah Mitchell"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">Sarah Mitchell</h6>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <small class="text-muted">Maldives Tour</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"Un'esperienza indimenticabile! Il resort era esattamente come nelle
+                                foto, e il servizio è stato impeccabile. Il team di Oltre Confine ha curato ogni
+                                dettaglio del viaggio."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces"
+                                    class="rounded-circle me-3" alt="Marco Rossi"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">Marco Rossi</h6>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <small class="text-muted">Japan Adventure</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"Il viaggio in Giappone è stato perfettamente organizzato. Dalle visite
+                                ai templi di Kyoto alla modernità di Tokyo, ogni momento è stato magico. Grazie per
+                                averci fatto scoprire questo paese meraviglioso!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces"
+                                    class="rounded-circle me-3" alt="Elena Bianchi"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0">Elena Bianchi</h6>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <small class="text-muted">Dubai Experience</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"La nostra esperienza a Dubai è stata straordinaria! Dal safari nel
+                                deserto allo shopping nei mall più lussuosi, tutto è stato perfetto. Consiglio vivamente
+                                Oltre Confine per la loro professionalità."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="lead mb-4">Unisciti anche tu a migliaia di viaggiatori soddisfatti, che hanno esploratp il
+                    mondo con noi!!!</p>
+                <button id="contaViaggi" type="button"  class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contaModal">Inizia il tuo viaggio oggi</button>
+
+                <div class="modal fade" id="contaModal" tabindex="-1" aria-labelledby="contaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="contaModalLabel">Parti da qui</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <p>Cerca e scegli la tu esperienza tra i <span id="quantiViaggi" class="fs-5"></span> viaggi proposti sulla nostra pagina</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-dismiss="modal">Procedi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row justify-content-end">
+
+                <div class="col-md-5">
+                    <form>
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                            <p class="m-0">Per ogni esigenza, </p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">contattaci</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nuovo Messagio</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <!-- <label for="recipient-name" class="col-form-label">Nome:</label> -->
+                                                    <input type="text" class="form-control" id="nome"
+                                                        placeholder="Inserisci il tuo nome">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <!-- <label for="recipient-name" class="col-form-label">Mittente:</label> -->
+                                                    <input type="text" class="form-control" id="cognome"
+                                                        placeholder="Inserisci il tuo cognome">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <!-- <label for="recipient-name" class="col-form-label">Mittente:</label> -->
+                                                    <input type="email" class="form-control" id="indirizzo"
+                                                        placeholder="Inserisci il tuo indirizzo e-mail">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Messaggio:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Chiudi</button>
+                                            <button id="inviaMessaggio" type="button" class="btn btn-primary" >Invia</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top">
+                <p>© 2024 OltreConfine s.r.l. - All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
